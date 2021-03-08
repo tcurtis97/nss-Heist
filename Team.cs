@@ -8,6 +8,14 @@ namespace heist
         public string Name { get; set; }
         public int Skill { get; set; }
         public decimal Courage { get; set; }
+
+        public Teammate(string name, int skill, int courage)
+        {
+            Name = name;
+            Skill = skill;
+            Courage = courage;
+        }
+
     }
 
 
