@@ -27,6 +27,8 @@ namespace heist
             Console.WriteLine("Add a Courage level (number) >");
             courage = Int32.Parse(Console.ReadLine());
             Console.WriteLine($"{courage}");
+
+
         }
 
 
