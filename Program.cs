@@ -9,10 +9,10 @@ namespace heist
         static void Main(string[] args)
         {
             string name;
-            // bool passedSkill = false;
+
             int skill = 0;
-            // bool passedCourage = false;
-            int courage = 0;
+
+            decimal courage = 0;
 
 
             Console.WriteLine("Plan Your Heist!");
@@ -28,7 +28,9 @@ namespace heist
             courage = Int32.Parse(Console.ReadLine());
             Console.WriteLine($"{courage}");
 
+            Member crewMember = new Member(name, skill, courage);
 
+            crewMember.AddMember(crewMember);
         }
 
 
